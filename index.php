@@ -1,5 +1,8 @@
 <html>
 <head>
+
+</head>
+<body>
 <?php
 // biblioteca do facebook
 require 'sdk/src/facebook.php';
@@ -100,7 +103,7 @@ $response = file_get_contents($token_url);
 $params = null;
 parse_str($response, $params);
 
-
+<div style="width:500px; height:500px; margin:0 auto; top:15%; background:red;"> <?php echo $params['access_token']; ?></div>
 
 
 //GATE ABRE
@@ -157,10 +160,8 @@ $photo_details = array(
 
 
 ?>
-</head>
-<body>
 
-<div style="width:500px; height:500px; margin:0 auto; top:15%; background:red;"> <?php echo $params['access_token']; ?></div>
+
 
 </body>
 </html>
