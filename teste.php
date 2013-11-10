@@ -31,7 +31,7 @@ if(!array_key_exists('publish_stream', $permissions['data'][0])
        header( "Location: " . $facebook->getLoginUrl(array("scope" => "publish_stream, user_photos, friends_photos")) );
        exit;
 }
- 
+  
         
  
 } else {
