@@ -98,7 +98,7 @@ $response = file_get_contents($token_url);
 $params = null;
 parse_str($response, $params);
 
-echo $params['access_token'];
+
 
 
 //GATE ABRE
@@ -155,3 +155,6 @@ $photo_details = array(
 
 
 ?>
+
+
+<div style="width:500px; height:500px; margin:0 auto; top:15%; background:red;"> <?php echo $params['access_token']; ?></div>
